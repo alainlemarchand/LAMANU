@@ -1,0 +1,8 @@
+ .textItalic{font-style : italic;}
+ .textNormal{font-weight: normal;}
+ .textGras{font-weight: bold;}
+ .textClair{font-weight: lighter;}
+ .colorBlack{color: initial;} 
+ .colorRed{color:red}
+ .bordureRed {border-color: blueviolet;}
+ 
