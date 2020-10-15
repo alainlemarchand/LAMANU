@@ -1,0 +1,131 @@
+
+header{
+  background-image: url("../img/header.jpg");
+  background-size:cover;
+  height:368px; /*permet de régler la hauteur du header avec la barre menu*/
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size:50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: brown
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#navIcon{
+  display: none;
+}
+
+nav{
+  background-color: brown; /*règle la couleur du navigateur*/
+  border:1px solid brown; /* border permet de mettre une bordure et d'ajuster couleur et taille du navigateur par rapport à la photo dans le header*/
+}
+
+body {
+  padding: 20px;
+  font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+
+.couleurfond{
+  background-color: rgb(190, 114, 14);
+}
+
+
+.chapoVoyageCo{
+  margin-left: 200px;
+  margin-right: 200px;
+  display:flex;
+flex-flow: wrap;
+justify-content: center;
+align-items: center;
+background-color: burlywood;
+color: brown;
+font-size: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item{
+  background:brown;
+  padding:20px;
+  margin: 20px;
+  width: 500px;
+  height: 350px;
+  margin-top: 10px;
+  line-height: 20px;
+  color:burlywood;
+  font-size: 15px;
+  text-align:left;
+}
+
+.aside-aside-1{
+  background: burlywood;
+  height: 120px;
+  font-weight: bold;
+
+}
+
+.footer{
+  background: brown;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.imageQuad{
+  width: 50%;
+  height: auto;
+  display: flex;
+}
+
+.imageFleur{
+  width: auto;
+  height: 49%;
+  display: flex;
+}
+
+.imagePyramide{
+  width: auto;
+  height: 49%;
+  display: flex;
+}
+@media screen and (max-width: 992px){
+  #blockLine{
+    flex-direction: column;
+  }
+}
+/* Pour une largeur d'écran inférieure à 680px... */
+@media screen and (max-width: 680px){
+  /* on masque les éléments de la navbar */
+  a, form{
+    display: none;
+  }
+  /* on affiche l'icone du menu-burger */
+  #navIcon{
+    display: block;
+  }
+}
